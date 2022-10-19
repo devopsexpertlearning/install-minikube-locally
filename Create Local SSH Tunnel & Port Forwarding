@@ -9,7 +9,7 @@ minikube service <hello-minikube>
 
 **********************************************************Use kubectl to forward the port*****************************************
 
-kubectl port-forward service/hello-minikube [ForwardPort]:[TargetPort]
+kubectl port-forward service/<serviceName> [ForwardPort]:[TargetPort]
 
 kubectl port-forward service/ubuntu-1 7081:8080
 
