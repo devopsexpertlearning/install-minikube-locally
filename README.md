@@ -153,10 +153,12 @@ kubectl port-forward service/hello-minikube [ForwardPort]:[TargetPort]
 # Example: Forwarding the service on port 8080 to port 7081
 kubectl port-forward service/hello-minikube 7081:8080
 
+```
 Step 10: Create Local SSH Tunnel
 
 To access your Kubernetes cluster externally, create a local SSH tunnel:
 
+```
 ssh -i /c/Users/jaibhole/Desktop/aws-key -L 8081:localhost:7080 ec2-user@52.66.221.70
 
 # Access the service in the browser
